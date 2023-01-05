@@ -1,12 +1,11 @@
 #!/usr/bin/python3
+
 """Defines a Rectangle class."""
 
 
 class Rectangle:
     """Represent a rectangle.
-
-    Attributes:
-        number_of_instances (int): The number of Rectangle instances.
+    Attributes        number_of_instances (int): The number of Rectangle instances.
         print_symbol (any): The symbol used for string representation.
     """
 
@@ -22,6 +21,7 @@ class Rectangle:
         type(self).number_of_instances += 1
         self.width = width
         self.height = height
+
     @property
     def width(self):
         """Get/set the width of the Rectangle."""
@@ -60,7 +60,6 @@ class Rectangle:
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
-
         Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
